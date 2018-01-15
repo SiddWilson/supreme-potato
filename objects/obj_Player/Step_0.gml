@@ -1,9 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+//TODO: Should directly add player code to step event
 script_execute(script_Player_Actions);
 script_execute(script_Depth_Adjustment);
+
+
+
+
+
+
+
+
 ///===OLD CODE===///
 //key_up = keyboard_check(ord("W")) || keyboard_check(vk_up);
 //key_down = keyboard_check(ord("S")) || keyboard_check(vk_down);

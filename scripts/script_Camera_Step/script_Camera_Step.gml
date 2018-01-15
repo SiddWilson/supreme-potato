@@ -1,13 +1,14 @@
 ///===Camera Step===///
-script_execute(script_Global_Variables);
 
 //--Camera Movement--//
-x += (xTo - x)/60;
-y += (yTo - y)/60;
 
+//TODO: Fix border issue where camera goes out of room area some
 if (follow != noone)
 {
+	x = clamp((x + (xTo - x)/32), 0, room_width);
 	xTo = follow.x;
+	
+	y = clamp((y + (yTo - y)/32), 0, room_height);
 	yTo = follow.y;
 }
 
